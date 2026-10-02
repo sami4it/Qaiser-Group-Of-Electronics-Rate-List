@@ -1,0 +1,26 @@
+QGE RATE PORTAL — GITHUB UPLOAD
+
+Upload ALL files and folders in this directory to the ROOT of your GitHub repository.
+Do not upload the outer ZIP folder itself as a nested directory.
+
+Required root items include:
+- index.html
+- package.json
+- package-lock.json
+- vite.config.ts
+- tsconfig.json
+- rates.xlsx
+- src/
+- .github/workflows/deploy.yml
+
+GitHub Pages:
+1) Push/upload everything to the main branch.
+2) GitHub: Settings > Pages > Source = GitHub Actions.
+3) Wait for the workflow "Deploy QGE Rate Portal to GitHub Pages" to finish.
+4) Open the Pages URL shown in Settings > Pages or in the workflow deployment.
+
+Monthly rates:
+Replace the root rates.xlsx with your latest file, keeping the filename exactly "rates.xlsx", then commit/push.
+
+Security note:
+This is a static GitHub Pages site. The login gate is client-side and is not suitable for confidential data.
